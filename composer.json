@@ -1,0 +1,61 @@
+{
+    "name": "grep/biller",
+    "description": "Fluent billing/subscription management for laravel apps",
+    "keywords": [
+        "laravel",
+        "paystack"
+    ],
+    "homepage": "https://github.com/GrepAfrica/biller",
+    "license": "Apache-2.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Adedaramola Adetimehin",
+            "email": "mailstokindle@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/console": "^9.21",
+        "illuminate/contracts": "^9.21",
+        "illuminate/database": "^9.21",
+        "illuminate/http": "^9.21",
+        "illuminate/log": "^9.21",
+        "illuminate/notifications": "^9.21",
+        "illuminate/routing": "^9.21",
+        "illuminate/support": "^9.21",
+        "illuminate/view": "^9.21",
+        "inertiajs/inertia-laravel": "^0.6.3"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grep\\Biller\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Grep\\Biller\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grep\\Biller\\BillerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
